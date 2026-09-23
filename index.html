@@ -3,43 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مشروع علوم عمان - تحميل اللعبة</title>
+    <title>مناهج سلطنة عمان</title>
     <style>
         body {
-            font-family: Tahoma, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            margin: 0;
+            padding: 0;
+            background-color: #0f121e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            /* تأثير الخلفية المخططة الخفيفة */
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .card {
+            background-color: #171c2c;
+            border: 1px solid #232a42;
+            border-radius: 16px;
+            padding: 35px 30px;
             text-align: center;
-            padding-top: 100px;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-        .container {
-            background-color: #161b22;
-            max-width: 500px;
-            margin: auto;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        h1 { color: #58a6ff; }
-        .btn {
+
+        .badge {
+            background-color: #133830;
+            color: #2ecc71;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
             display: inline-block;
-            background-color: #238636;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 20px;
-            font-weight: bold;
+            margin-bottom: 20px;
+            font-weight: 600;
         }
-        .btn:hover { background-color: #2ea043; }
+
+        p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+
+        .arrow {
+            font-size: 20px;
+            color: #f1c40f;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>مرحباً بكم في مشروع العلوم</h1>
-        <p>اضغط على الزر أدناه لتحميل البرنامج وتشغيله مباشرة على جهازك:</p>
-        <a href="mwad.exe" class="btn">تحميل البرنامج (mwad.exe)</a>
+
+    <div class="card">
+        <div class="badge">🇴🇲 مناهج سلطنة عمان</div>
+        <p>أهلاً بكم. في الأسفل مرفق أسئلة لمادة العلوم والاسلامية، ونحن نعمل على إكمال المواد الأخرى. هذه الكتب مخصصة للمنهج العماني.</p>
+        <div class="arrow">↓</div>
+        <!-- تم ربط الزر بملف 2 mwad.exe بالشكل الصحيح -->
+        <a href="2%20mwad.exe" class="download-btn" download>تحميل الملفات</a>
     </div>
+
 </body>
 </html>
